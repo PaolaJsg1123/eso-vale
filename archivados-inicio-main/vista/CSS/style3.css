@@ -1,0 +1,428 @@
+/* Style */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family:Inter,sans-serif;
+    
+    background: linear-gradient(#821EE5 ,#D0A1FF);
+    height: 100vh;
+    
+}
+
+.formulario{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 340px;
+    height: 470px;
+    background: transparent;
+    border: 4px solid;
+
+    border-color: white;
+    border-radius: 20px;
+    padding: 10px 10px;
+}
+
+.fa-solid[name="usuario"]{
+    color: white;
+   font-size: 40px;
+   width: 70px;
+   height: 50px;
+   position: absolute;
+   top: -20px;
+   left: 5px;
+}
+
+.fa-solid[name="candado"]{
+    color: white;
+   font-size: 40px;
+   width: 70px;
+   height: 50px;
+   position: absolute;
+   top: -20px;
+   left: 5px;
+}
+i[name="circulo"]{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -27px;
+    left: calc(50% - 40px);
+    color: white;
+    font-size: 90px;
+
+}
+
+.formulario h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    color: white;
+    margin-top: 75px;
+    
+}
+
+.formulario form{
+    padding: 0 40px;
+    box-sizing: border-box;
+
+}
+
+form .username{
+    position: relative;
+    border-bottom: 2px solid white;
+    margin: 30px 0;
+}
+
+
+form .candado{
+    width: 55px;
+    height: 40px;
+    position: absolute;
+    top: -20px;
+    left: -5px;
+}
+form .password{
+    position: relative;
+    border-bottom: 2px solid white;
+    margin: 30px 0;
+}
+.username input{
+    width: 77%;
+    padding: 0 5px;
+    height: 25px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    margin-left: 50px;
+}
+
+.password input{
+    width: 70%;
+    padding: 0 5px;
+    height: 25px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    margin-left: 50px;
+}
+
+.username label{
+   
+    position: absolute;
+    width: 100%;
+    height: 55px;
+    top: 10%;
+    left: 180px;
+    color: white;
+    transform: translate(-50%);
+   font-size: 15px;
+   pointer-events: none;
+   transition: .5s;
+}
+.password label{
+    position: absolute;
+    top: 10%;
+    left: 91px;
+    color: white;
+    transform: translate(-50%);
+    font-size: 15px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.username span::before{
+    content: " ";
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: white;
+
+}
+form input:focus ~label,
+form input:valid ~label{
+    top: -20px;
+    color: white;
+
+    
+}
+
+
+form input:focus ~span::before,
+form input:focus ~span::before{
+    width: 100%;
+   
+}
+
+
+
+.recordarcontraseña{
+    margin:-5px 0 20px  5px;
+    text-align: right;
+    color: white;
+    cursor: pointer;
+}
+
+.recordarcontraseña a{
+    color: white;
+    text-decoration: none;
+
+}
+.recordarcontraseña:hover{
+    text-decoration: underline;
+}
+
+input[type="text"],
+input[type="password"]{
+    color: white;
+}
+
+input[type="submit"]{
+    width: 100%;
+    height: 50%;
+    border: 1px solid white;
+    background: white;
+    border-radius: 30px;
+    font-size: 25px;
+    color:#821EE5;
+    cursor: pointer;
+    outline: none;
+
+}
+input[type="submit"]:hover{
+    border-color: #821EE5;
+    transition: .5s;
+}
+
+.registrarse{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+
+}
+.registrarse a{
+    color: white;
+    text-decoration: none;
+}
+
+.registrarse a:hover{
+    text-decoration: underline;
+}
+
+
+h2{
+    text-align: left;
+    margin-left: 20px;
+    color: white;
+
+}
+
+/*MEDIAS QUERIES*/
+
+/*TELEFONOS INTELIGENTES*/
+@media( min-height:768px){
+
+ .formulario{
+ 
+    top: 50%;
+    left: 50%;
+    bottom: 30%;
+    right: 50%;
+    width: 750px;
+    height: 1500px;
+    padding: 20px 20px;
+    border: 10px solid white;
+ }
+
+ i[name="circulo"]{
+  
+    border-radius: 50%;
+    position: absolute;
+    top: -60px;
+    left: calc(44% - 43px);
+    font-size: 200px;
+
+}
+
+
+
+.formulario h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    font-size: 80px;
+    color: white;
+    margin-top: 200px;
+    
+}
+form .username{
+    position: relative;
+    border-bottom: 10px solid white;
+    margin: 180px 0;
+    
+    
+}
+form .password{
+    position: relative;
+    border-bottom: 10px solid white;
+    top: 50%;
+    margin-bottom: 150px;
+}
+
+.fa-solid[name="usuario"]{
+    font-size: 100px;
+    width: 120px;
+    height: 100px;
+    position: absolute;
+    top: -60px;
+    left: 10px;
+}
+.fa-solid[name="candado"]{
+    font-size: 100px;
+    width: 120px;
+    height: 100px;
+    position: absolute;
+    top: -60px;
+    left: 10px;
+}
+
+.username input{
+    width: 77%;
+    padding: 0 5px;
+    height: 55px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    margin-left: 120px;
+}
+
+.password input{
+    width: 75%;
+    padding: 0 5px;
+    height: 50px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    margin-left: 120px;
+}
+
+.username label{
+    position: absolute;
+    width: 100%;
+    height: 55px;
+    top: -30%;
+    left: 450px;
+    color: white;
+    transform: translate(-50%);
+   font-size: 40px;
+   pointer-events: none;
+   transition: .5s;
+}
+.password label{
+    position: absolute;
+    top: -40%;
+    left: 232px;
+    color: white;
+    transform: translate(-50%);
+    font-size: 40px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.username span::before{
+    content: " ";
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: white;
+
+}
+form input:focus ~label,
+form input:valid ~label{
+    top: -90px;
+    color: white;
+
+    
+}
+
+
+form input:focus ~span::before,
+form input:focus ~span::before{
+    width: 100%;
+   
+}
+input[type="text"],
+input[type="password"]{
+    color: white;
+    font-size: 45px;
+}
+
+.recordarcontraseña{
+    font-size: 40px;
+    margin:-5px 0 20px  5px;
+    text-align: right;
+    color: white;
+    cursor: pointer;
+}
+
+.recordarcontraseña a{
+    color: white;
+    text-decoration: none;
+
+}
+.recordarcontraseña:hover{
+    text-decoration: underline;
+}
+
+input[type="submit"]{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 100%;
+    height: 80px;
+    border: 2px solid white;
+    background: white;
+    border-radius: 30px;
+    font-size: 40px;
+    color:#821EE5;
+    cursor: pointer;
+    outline: none;
+
+}
+input[type="submit"]:hover{
+    border-color: #821EE5;
+    transition: .5s;
+}
+
+.registrarse{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 45px;
+    color: white;
+
+}
+.registrarse a{
+    color: white;
+    text-decoration: none;
+}
+
+.registrarse a:hover{
+    text-decoration: underline;
+}
+h2{
+    text-align: left;
+    margin-left: 20px;
+    font-size: 30px;
+
+}
+}

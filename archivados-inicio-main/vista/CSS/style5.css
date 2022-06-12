@@ -1,0 +1,395 @@
+/* styles */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family:Inter,sans-serif;
+    
+    background: linear-gradient(#821EE5 ,#D0A1FF);
+    height: 100vh;
+    
+}
+.margin{
+    margin-top: 10px;
+}
+h2{
+    margin-left: 20px;
+    color: white;
+}
+.registro{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 900px;
+    height: 470px;
+    background: transparent;
+    border: 4px solid;
+
+    border-color: white;
+    border-radius: 20px;
+    padding: 10px 10px;
+}
+
+.fa-solid[name="re"]{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -30px;
+    left: calc(50% - 25px);
+    color: white;
+    font-size: 75px;
+
+}
+
+.registro h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    color: white;
+    margin-top: 50px;
+    
+}
+
+.registro form{
+    padding: 0 40px;
+    box-sizing: border-box;
+
+}
+
+form .pa{
+    display: flex;
+   
+  
+}
+
+.nombre input{
+    width: 98%;
+    padding: 0 5px;
+    height: 30px;
+    font-size: 16px;
+    border: solid white;
+    background: transparent;
+    outline: none;
+    margin-left: 30px;
+    margin-right: 80px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+input::placeholder{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+.apellido input{
+    width: 80%;
+    padding: 0 5px;
+    height: 30px;
+    font-size: 16px;
+    border:solid white;
+    background: transparent;
+    outline: none;
+    margin-left: 140px;
+    margin-right: 40px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+form .pa2{
+    display: flex;
+}
+
+.username input{
+    width: 98%;
+    padding: 0 5px;
+    height: 30px;
+    font-size: 16px;
+    border: solid white;
+    background: transparent;
+    outline: none;
+    margin-left: 30px;
+    margin-right: 80px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.password input{
+    width: 80%;
+    padding: 0 5px;
+    height: 30px;
+    font-size: 16px;
+    border:solid white;
+    background: transparent;
+    outline: none;
+    margin-left: 140px;
+    margin-right: 40px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+
+}
+
+form .pa3{
+    display: flex;
+}
+
+.email input{
+    width: 98%;
+    padding: 0 5px;
+    height: 30px;
+    font-size: 16px;
+    border: solid white;
+    background: transparent;
+    outline: none;
+    margin-left: 30px;
+    margin-right: 80px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.passwordagain input{
+    width: 80%;
+    padding: 0 5px;
+    height: 30px;
+    font-size: 16px;
+    border:solid white;
+    background: transparent;
+    outline: none;
+    margin-left: 140px;
+    margin-right: 40px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+
+
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"]{
+    color: white;
+}
+
+.aceptar{
+    margin:-5px 0 20px  5px;
+    text-align: center;
+    color: white;
+    
+}
+
+input[type="submit"]{
+    width: 70%;
+    height: 50%;
+    border: 1px solid white;
+    background: white;
+    border-radius: 30px;
+    font-size: 25px;
+    color:#821EE5;
+    cursor: pointer;
+    outline: none;
+    margin-left: 124px;
+}
+input[type="submit"]:hover{
+    border-color: #821EE5;
+    transition: .5s;
+}
+
+/*MEDIAS QUERIES*/
+
+/*TELEFONOS INTELIGENTES*/
+@media( min-height:768px){
+
+    .registro{
+    
+       top: 50%;
+       left: 50%;
+       bottom: 30%;
+       right: 50%;
+       width: 750px;
+       height: 1500px;
+       padding: 20px 20px;
+       border: 10px solid white;
+    }
+   
+    .registro .avatar{
+       width: 200px;
+       height: 200px;
+       border-radius: 50%;
+       position: absolute;
+       top: -60px;
+       left: calc(44% - 43px);
+      
+   }
+
+   .fa-solid[name="re"]{
+
+   
+    border-radius: 50%;
+    position: absolute;
+    top: -60px;
+    left: calc(44% - 15px);
+    font-size: 150px;
+   
+
+   }
+
+   .registro h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    color: white;
+    margin-top: 150px;
+    font-size: 60px;
+    
+}
+
+
+
+   form .pa{
+    display: inline;
+  
+}
+
+.nombre input{
+    width: 98%;
+    padding: 0 5px;
+    height: 60px;
+    font-size: 16px;
+    border: solid white;
+    background: transparent;
+    outline: none;
+    margin-left: 1px;
+    border-radius: 40px;
+    margin-bottom: 40px;
+}
+
+.apellido input{
+    width: 98%;
+    padding: 0 5px;
+    height: 60px;
+    font-size: 16px;
+    border:solid white;
+    background: transparent;
+    outline: none;
+    margin-left: 1px;
+    border-radius: 40px;
+    margin-bottom: 40px;
+}
+
+form .pa2{
+    display: inline;
+}
+
+.username input{
+    width: 98%;
+    padding: 0 5px;
+    height: 60px;
+    font-size: 16px;
+    border: solid white;
+    background: transparent;
+    outline: none;
+    margin-left: 1px;
+    border-radius: 40px;
+    margin-bottom: 40px;
+}
+
+.password input{
+    width: 98%;
+    padding: 0 5px;
+    height: 60px;
+    font-size: 16px;
+    border:solid white;
+    background: transparent;
+    outline: none;
+    margin-left: 1px;
+    border-radius: 40px;
+    margin-bottom: 40px;
+
+}
+form .pa3{
+    display: inline;
+}
+
+.email input{
+    width: 98%;
+    padding: 0 5px;
+    height: 60px;
+    font-size: 16px;
+    border: solid white;
+    background: transparent;
+    outline: none;
+    margin-left: 1px;
+    border-radius: 40px;
+    margin-bottom: 40px;
+}
+
+.passwordagain input{
+    width: 98%;
+    padding: 0 5px;
+    height: 60px;
+    font-size: 16px;
+    border:solid white;
+    background: transparent;
+    outline: none;
+    margin-left: 1px;
+    border-radius: 40px;
+    margin-bottom: 40px;
+
+
+}
+
+
+input::placeholder{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+
+input[type="text"],
+input[type="password"],
+input[type="email"]{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.aceptar{
+
+    margin:80px 0 20px  5px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    
+}
+
+   input[type="submit"]{
+       margin-top: 70px;
+        margin-left: 1px;
+       margin-bottom: 70px;
+       width: 100%;
+       height: 90px;
+       border: 2px solid white;
+       background: white;
+       border-radius: 40px;
+       font-size: 45px;
+       color:#821EE5;
+       cursor: pointer;
+       outline: none;
+   
+   }
+   input[type="submit"]:hover{
+       border-color: #821EE5;
+       transition: .5s;
+   }
+   
+
+   h2{
+       text-align: left;
+       margin-left: 20px;
+       font-size: 30px;
+   
+   }
+   
+   }
